@@ -220,7 +220,7 @@ if uploaded is None:
         """
     <div class="card" style="text-align:center;padding:70px;">
 
-    <h2>📂 Upload Student's Data</h2>
+    <h2><i class="fa-solid fa-file-excel"></i> Upload Student's Data</h2>
 
     <p style="color:#64748B;font-size:16px;">
     Upload a CSV or Excel file to generate professional report cards.
@@ -555,7 +555,7 @@ def render_report_card(row, exercise, course):
         <div class="metric-card">
 
         <div class="metric-title">
-        📈 Score
+        <i class="fa-solid fa-chart-line"></i> Score
         </div>
 
         <div class="metric-value">
@@ -578,7 +578,7 @@ def render_report_card(row, exercise, course):
         <div class="metric-card">
 
         <div class="metric-title">
-        🏆 Rank
+        <i class="fa-solid fa-award"></i> Rank
         </div>
 
         <div class="metric-value">
@@ -601,7 +601,7 @@ def render_report_card(row, exercise, course):
         <div class="metric-card">
 
         <div class="metric-title">
-        🎯 Percentage
+        <i class="fa-solid fa-bullseye"></i> Percentage
         </div>
 
         <div class="metric-value">
@@ -624,7 +624,7 @@ def render_report_card(row, exercise, course):
         <div class="metric-card">
 
         <div class="metric-title">
-        🔁 Attempts
+        <i class="fa-solid fa-arrows-rotate"></i> Attempts
         </div>
 
         <div class="metric-value">
@@ -714,7 +714,7 @@ st.markdown(
     """
 <div class="card">
 <h3 style="margin-bottom:15px;color:#0F172A;">
-📝 Teacher's Comments
+<i class="fa-regular fa-comment-dots"></i> Assessor's Comments
 </h3>
 <p style="color:#64748B;">
 Add personalized feedback that will appear on the student's report card.
@@ -743,7 +743,7 @@ margin-bottom:15px;
 font-weight:700;
 color:#0F172A;
 ">
-📄 Export Report Card
+<i class="fa-solid fa-file-pdf"></i> Export Report Card
 </h3>
 
 <p style="
