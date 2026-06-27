@@ -707,6 +707,30 @@ render_report_card(row, exercise, course)
 st.markdown("<br>", unsafe_allow_html=True)
 
 # ============================================================
+# Teacher Comments
+# ============================================================
+
+st.markdown(
+    """
+<div class="card">
+<h3 style="margin-bottom:15px;color:#0F172A;">
+📝 Teacher's Comments
+</h3>
+<p style="color:#64748B;">
+Add personalized feedback that will appear on the student's report card.
+</p>
+</div>
+""",
+    unsafe_allow_html=True,
+)
+
+comments = st.text_area(
+    "",
+    placeholder="Example: Excellent performance! Keep up the great work and continue practicing regularly.",
+    height=150,
+)
+
+# ============================================================
 # Download Section
 # ============================================================
 
@@ -734,7 +758,7 @@ Generate and download a professional PDF report card for this student.
     unsafe_allow_html=True,
 )
 
-pdf_bytes = generate_pdf(row, exercise, course)
+pdf_bytes = generate_pdf(row, exercise, course, comments)
 
 st.download_button(
     label="⬇ Download PDF Report Card",
