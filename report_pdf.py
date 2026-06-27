@@ -243,7 +243,7 @@ def generate_pdf(
     pdf.set_font("Helvetica", "B", 11)
     pdf.set_text_color(*PRIMARY_BLUE)
     pdf.set_xy(M, y_comments)
-    pdf.cell(0, 6, "Teacher's Comments", ln=True)
+    pdf.cell(0, 6, "Assessor's Comments", ln=True)
 
     # Comment box
     box_y = y_comments + 7
